@@ -79,7 +79,7 @@ steps:
     title: Running Namespace
     type: deploy
     kind: kubernetes
-    cluster: standard-cluster-1@otters-cc
+    cluster: istio-test@otters-cc
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/namespace.yaml
 
@@ -87,7 +87,7 @@ steps:
     title: Running Configmap
     type: deploy
     kind: kubernetes
-    cluster: standard-cluster-1@otters-cc
+    cluster: istio-test@otters-cc
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/configmap.yaml
 
@@ -95,7 +95,7 @@ steps:
     title: Running Deployment
     type: deploy
     kind: kubernetes
-    cluster: standard-cluster-1@otters-cc
+    cluster: istio-test@otters-cc
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/deployment.yaml
 
@@ -103,7 +103,7 @@ steps:
 #    title: Running Service
 #    type: deploy
 #    kind: kubernetes
-#    cluster: standard-cluster-1@otters-cc
+#    cluster: istio-test@otters-cc
 #    namespace: ${{NAMESPACE}}
 #    file_path: ./k8s/service.yaml
           
@@ -111,6 +111,6 @@ steps:
     title: Running Ingress
     type: deploy
     kind: kubernetes
-    cluster: standard-cluster-1@otters-cc
+    cluster: istio-test@otters-cc
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/ingress.yaml
