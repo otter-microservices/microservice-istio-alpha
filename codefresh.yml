@@ -99,13 +99,13 @@ steps:
     namespace: ${{NAMESPACE}}
     file_path: ./k8s/deployment.yaml
 
-  RunningServiceScript:
-    title: Running Service
-    type: deploy
-    kind: kubernetes
-    cluster: standard-cluster-1@otters-cc
-    namespace: ${{NAMESPACE}}
-    file_path: ./k8s/service.yaml
+#  RunningServiceScript:
+#    title: Running Service
+#    type: deploy
+#    kind: kubernetes
+#    cluster: standard-cluster-1@otters-cc
+#    namespace: ${{NAMESPACE}}
+#    file_path: ./k8s/service.yaml
           
   RunningIngressScript:
     title: Running Ingress
