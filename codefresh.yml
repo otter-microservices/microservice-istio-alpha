@@ -107,10 +107,10 @@ steps:
 #    namespace: ${{NAMESPACE}}
 #    file_path: ./k8s/service.yaml
           
-  RunningIngressScript:
-    title: Running Ingress
-    type: deploy
-    kind: kubernetes
-    cluster: istio-test@otters-cc
-    namespace: ${{NAMESPACE}}
-    file_path: ./k8s/ingress.yaml
+#  RunningIngressScript:
+#    title: Running Ingress
+#    type: deploy
+#    kind: kubernetes
+#    cluster: istio-test@otters-cc
+#    namespace: ${{NAMESPACE}}
+#    file_path: ./k8s/ingress.yaml
